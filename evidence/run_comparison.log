@@ -1,0 +1,36 @@
+[traditional] # 1 ACCESS/MEDIUM          esperado ACCESS/MEDIUM        OK
+[traditional] # 2 BUG/MEDIUM             esperado BUG/MEDIUM           OK
+[traditional] # 3 FEATURE/LOW            esperado FEATURE/LOW          OK
+[traditional] # 4 SECURITY/CRITICAL      esperado SECURITY/CRITICAL    OK
+[traditional] # 5 BUG/HIGH               esperado BUG/HIGH             OK
+[traditional] # 6 FEATURE/LOW            esperado FEATURE/LOW          OK
+[traditional] # 7 ACCESS/MEDIUM          esperado ACCESS/MEDIUM        OK
+[traditional] # 8 SECURITY/HIGH          esperado SECURITY/CRITICAL    --
+[traditional] # 9 BUG/MEDIUM             esperado BUG/MEDIUM           OK
+[traditional] #10 BUG/MEDIUM             esperado SECURITY/HIGH        --
+[traditional] #11 SECURITY/CRITICAL      esperado SECURITY/CRITICAL    OK
+[traditional] #12 FEATURE/LOW            esperado SECURITY/CRITICAL    --
+[generative ] # 1 ACCESS/MEDIUM          esperado ACCESS/MEDIUM        OK
+[generative ] # 2 BUG/HIGH               esperado BUG/MEDIUM           --
+[generative ] # 3 FEATURE/LOW            esperado FEATURE/LOW          OK
+[generative ] # 4 SECURITY/CRITICAL      esperado SECURITY/CRITICAL    OK
+[generative ] # 5 BUG/CRITICAL           esperado BUG/HIGH             --
+[generative ] # 6 FEATURE/LOW            esperado FEATURE/LOW          OK
+[generative ] # 7 ACCESS/HIGH            esperado ACCESS/MEDIUM        --
+[generative ] # 8 SECURITY/CRITICAL      esperado SECURITY/CRITICAL    OK
+[generative ] # 9 BUG/MEDIUM             esperado BUG/MEDIUM           OK
+[generative ] #10 ACCESS/MEDIUM          esperado SECURITY/HIGH        --
+[generative ] #11 SECURITY/CRITICAL      esperado SECURITY/CRITICAL    OK
+[generative ] #12 ACCESS/HIGH            esperado SECURITY/CRITICAL    --
+|-------|----------------|--------------------|-------------------------------|--------------|
+| traditional | 100% | 83.3% | 75.0% | 9 ms |
+| generative | 100% | 83.3% | 58.3% | 3519 ms |
+
+## Validaciones de la API
+
+| Caso invalido | HTTP |
+|---|---|
+| vacio | 400 |
+| modo invalido | 400 |
+| demasiado largo | 400 |
+| campo incorrecto | 400 |
