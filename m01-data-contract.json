@@ -1,6 +1,6 @@
 {
   "assignmentId": "[Semana 12] M01 | Reto práctico: AI Support Engine",
-  "commitSha": "PENDIENTE_SE_LLENA_TRAS_EL_COMMIT_VERIFICADO",
+  "commitSha": "d944f55685e295daf67b7f10565d7680625647bc",
   "tag": "week-12-final",
   "commands": ["make setup", "make verify", "make run", "make evidence"],
   "results": {
