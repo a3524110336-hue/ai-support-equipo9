@@ -41,9 +41,9 @@ class Handler(BaseHTTPRequestHandler):
         try:
             engine = generative if mode == "generative" else traditional
             return self._send(200, engine.classify(message))
-        except generative.GenerativeError as e:
+        except generative.GenerativeError:
             # Mensaje generico: no se exponen trazas, URLs internas ni credenciales.
-            return self._send(502, {"error": "Fallo del motor generativo", "detail": str(e)})
+            return self._send(502, {"error": "Fallo del motor generativo"})
         except Exception:
             return self._send(500, {"error": "Error interno"})
 
