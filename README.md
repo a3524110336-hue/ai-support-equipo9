@@ -2,6 +2,14 @@
 
 Bases de datos en la nube · Equipo 9
 
+## Integrantes
+
+| Integrante | Parte |
+|---|---|
+| Jonathan Alexis Alta Bravo | P1 · Motor tradicional, validación de la API y ADR-001 |
+| Marco Antonio Osorio Hernández | P2 · Motor generativo |
+| Jesús Alejandro Trujillo Castro | P3 · Pruebas comparativas, evidencia y conclusión |
+
 Prototipo que clasifica solicitudes de soporte en **ACCESS / BUG / FEATURE / SECURITY**, les asigna
 prioridad **LOW / MEDIUM / HIGH / CRITICAL** y genera una respuesta. Tiene dos motores con el mismo
 contrato de respuesta, expuestos en `POST /api/analyze`:
