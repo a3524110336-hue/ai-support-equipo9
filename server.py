@@ -26,11 +26,17 @@ class Handler(BaseHTTPRequestHandler):
     def do_POST(self):
         if self.path != "/api/analyze":
             return self._send(404, {"error": "Ruta no encontrada"})
-        if "application/json" not in (self.headers.get("Content-Type") or ""):
+        content_type = (self.headers.get("Content-Type") or "").split(";")[0].strip().lower()
+        if content_type != "application/json":
             return self._send(415, {"error": "Content-Type debe ser application/json"})
-        length = int(self.headers.get("Content-Length") or 0)
-        if length <= 0 or length > MAX_BODY:
-            return self._send(413 if length > MAX_BODY else 400, {"error": "Cuerpo vacio o demasiado grande"})
+        try:
+            length = int(self.headers.get("Content-Length") or 0)
+        except ValueError:
+            return self._send(400, {"error": "Content-Length invalido"})
+        if length > MAX_BODY:
+            return self._send(413, {"error": f"El cuerpo excede {MAX_BODY} bytes"})
+        if length <= 0:
+            return self._send(400, {"error": "Cuerpo vacio"})
         try:
             payload = json.loads(self.rfile.read(length).decode("utf-8"))
             message, mode = validate_request(payload)
