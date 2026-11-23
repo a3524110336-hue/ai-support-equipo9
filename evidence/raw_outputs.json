@@ -4,13 +4,13 @@
       "format": 100.0,
       "category": 83.33333333333334,
       "correct": 75.0,
-      "ms": 9
+      "ms": 25
     },
     "generative": {
       "format": 100.0,
       "category": 83.33333333333334,
       "correct": 58.333333333333336,
-      "ms": 3519
+      "ms": 19625
     }
   },
   "validation": [
@@ -49,7 +49,7 @@
         "requiresHumanReview": false,
         "mode": "traditional"
       },
-      "ms": 10
+      "ms": 251
     },
     {
       "case": {
@@ -68,7 +68,7 @@
         "requiresHumanReview": false,
         "mode": "traditional"
       },
-      "ms": 2
+      "ms": 3
     },
     {
       "case": {
@@ -87,7 +87,7 @@
         "requiresHumanReview": false,
         "mode": "traditional"
       },
-      "ms": 1
+      "ms": 3
     },
     {
       "case": {
@@ -106,7 +106,7 @@
         "requiresHumanReview": true,
         "mode": "traditional"
       },
-      "ms": 1
+      "ms": 2
     },
     {
       "case": {
@@ -125,7 +125,7 @@
         "requiresHumanReview": true,
         "mode": "traditional"
       },
-      "ms": 23
+      "ms": 3
     },
     {
       "case": {
@@ -144,7 +144,7 @@
         "requiresHumanReview": false,
         "mode": "traditional"
       },
-      "ms": 15
+      "ms": 4
     },
     {
       "case": {
@@ -163,7 +163,7 @@
         "requiresHumanReview": false,
         "mode": "traditional"
       },
-      "ms": 15
+      "ms": 3
     },
     {
       "case": {
@@ -182,7 +182,7 @@
         "requiresHumanReview": true,
         "mode": "traditional"
       },
-      "ms": 2
+      "ms": 27
     },
     {
       "case": {
@@ -201,7 +201,7 @@
         "requiresHumanReview": true,
         "mode": "traditional"
       },
-      "ms": 2
+      "ms": 3
     },
     {
       "case": {
@@ -220,7 +220,7 @@
         "requiresHumanReview": true,
         "mode": "traditional"
       },
-      "ms": 1
+      "ms": 3
     },
     {
       "case": {
@@ -239,7 +239,7 @@
         "requiresHumanReview": true,
         "mode": "traditional"
       },
-      "ms": 25
+      "ms": 2
     },
     {
       "case": {
@@ -258,7 +258,7 @@
         "requiresHumanReview": false,
         "mode": "traditional"
       },
-      "ms": 15
+      "ms": 4
     },
     {
       "case": {
@@ -273,11 +273,11 @@
       "output": {
         "category": "ACCESS",
         "priority": "MEDIUM",
-        "response": "Entiendo que estás teniendo problemas para iniciar sesión. Parece que hay un inconveniente con tu contraseña recién cambiada. Te recomendaría que verifiques si has ingresado correctamente los nuevos datos.",
+        "response": "Entiendo que estás teniendo problemas para iniciar sesión. Parece que hay un inconveniente con tu contraseña recién cambiada. Te recomendaría que verifiques si has ingresado la nueva contraseña correctamente o intentes iniciar sesión nuevamente.",
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 4473
+      "ms": 55334
     },
     {
       "case": {
@@ -292,11 +292,11 @@
       "output": {
         "category": "BUG",
         "priority": "HIGH",
-        "response": "Se ha reportado un error 500 al guardar las facturas, lo cual afecta la funcionalidad del sistema. Se recomienda revisar el problema lo antes posible.",
+        "response": "Se ha reportado un error 500 al guardar en el formulario de facturas, lo cual está afectando la funcionalidad del sistema. Se recomienda solucionarlo con prioridad.",
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 5912
+      "ms": 19162
     },
     {
       "case": {
@@ -311,11 +311,11 @@
       "output": {
         "category": "FEATURE",
         "priority": "LOW",
-        "response": "Entendido, una solicitud para agregar un modo oscuro a la aplicación. Estaremos considerando esta idea para futuras actualizaciones.",
+        "response": "Entendido, una solicitud para implementar el modo oscuro en la aplicación. Estaremos considerando esta funcionalidad para una futura actualización.",
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 4903
+      "ms": 17211
     },
     {
       "case": {
@@ -334,7 +334,7 @@
         "requiresHumanReview": true,
         "mode": "generative"
       },
-      "ms": 5081
+      "ms": 16495
     },
     {
       "case": {
@@ -353,7 +353,7 @@
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 2481
+      "ms": 15730
     },
     {
       "case": {
@@ -368,11 +368,11 @@
       "output": {
         "category": "FEATURE",
         "priority": "LOW",
-        "response": "Entendido, una solicitud para agregar la funcionalidad de exportar los reportes a Excel. Estaremos considerando esta solicitud para futuras actualizaciones.",
+        "response": "Entendido, una solicitud para agregar la funcionalidad de exportar los reportes a Excel. Estaremos considerando esta solicitud en nuestra lista de mejoras futuras.",
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 2776
+      "ms": 17434
     },
     {
       "case": {
@@ -387,11 +387,11 @@
       "output": {
         "category": "ACCESS",
         "priority": "HIGH",
-        "response": "Lo siento por el inconveniente. Parece un bloqueo de seguridad que requiere atención inmediata.",
+        "response": "Lo siento por el inconveniente. Su cuenta ha sido bloqueada por seguridad y necesita atención inmediata.",
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 2368
+      "ms": 15128
     },
     {
       "case": {
@@ -406,11 +406,11 @@
       "output": {
         "category": "SECURITY",
         "priority": "CRITICAL",
-        "response": "Esta situación es crítica y requiere inmediata atención para evitar posibles furtos de datos. Por favor, contáctenos de inmediato.",
+        "response": "Esta situación es crítica y requiere inmediata atención para evitar posibles furtos de datos. Por favor, bloquea el acceso inmediato y notifica a todos los empleados.",
         "requiresHumanReview": true,
         "mode": "generative"
       },
-      "ms": 2835
+      "ms": 18978
     },
     {
       "case": {
@@ -425,11 +425,11 @@
       "output": {
         "category": "BUG",
         "priority": "MEDIUM",
-        "response": "Entiendo que la app está comportándose de manera inusual desde ayer. Podríamos necesitar más detalles para diagnosticar el problema. ¿Podría compartir la versión de la app y si ha realizado algún cambio reciente?",
+        "response": "Entiendo que la app está presentando algún problema desde ayer. Podríamos necesitar más detalles para diagnosticar el problema.",
         "requiresHumanReview": false,
         "mode": "generative"
       },
-      "ms": 3351
+      "ms": 13187
     },
     {
       "case": {
@@ -444,11 +444,11 @@
       "output": {
         "category": "ACCESS",
         "priority": "MEDIUM",
-        "response": "Entiendo que estás viendo información de otra persona en tu perfil. Esto podría ser un error de privacidad. Por favor, contáctanos para resolver este problema lo antes posible.",
+        "response": "Entiendo que estás viendo información de otra persona en tu perfil. Esto podría ser un problema de privacidad. Por favor, contáctanos para resolver este asunto lo antes posible.",
         "requiresHumanReview": true,
         "mode": "generative"
       },
-      "ms": 3083
+      "ms": 16850
     },
     {
       "case": {
@@ -463,11 +463,11 @@
       "output": {
         "category": "SECURITY",
         "priority": "CRITICAL",
-        "response": "La exposición de contraseñas en texto plano es un grave problema de seguridad que requiere atención inmediata.",
+        "response": "La exposición de contraseñas en texto plano es un grave problema de seguridad que requiere inmediata atención.",
         "requiresHumanReview": true,
         "mode": "generative"
       },
-      "ms": 2415
+      "ms": 14739
     },
     {
       "case": {
@@ -486,7 +486,7 @@
         "requiresHumanReview": true,
         "mode": "generative"
       },
-      "ms": 2561
+      "ms": 15258
     }
   ]
 }

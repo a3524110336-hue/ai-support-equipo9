@@ -21,8 +21,8 @@ Correcto = categoria **y** prioridad iguales a la clasificacion de referencia (`
 
 | Motor | Formato valido | Categoria correcta | Categoria + prioridad correctas | Tiempo medio |
 |-------|----------------|--------------------|-------------------------------|--------------|
-| traditional | 100% | 83.3% | 75.0% | 9 ms |
-| generative | 100% | 83.3% | 58.3% | 3519 ms |
+| traditional | 100% | 83.3% | 75.0% | 25 ms |
+| generative | 100% | 83.3% | 58.3% | 19625 ms |
 
 ## Validaciones de la API
 
