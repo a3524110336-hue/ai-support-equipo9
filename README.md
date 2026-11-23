@@ -61,19 +61,18 @@ Tabla completa: [`evidence/results.md`](evidence/results.md) · salidas crudas d
 
 | Motor | Formato válido | Categoría correcta | Categoría + prioridad correctas | Tiempo medio |
 |---|---|---|---|---|
-| Tradicional | 100% | 83.3% | **75.0%** | 9 ms |
-| Generativo | 100% | 83.3% | 58.3% | 3519 ms |
+| Tradicional | 100% | 100.0% | **100.0%** | 17 ms |
+| Generativo | 100% | 91.7% | 75.0% | 17765 ms |
 
 ## Conclusión técnica
 
-Con nuestra clasificación de referencia, el motor tradicional acertó más (75% contra 58.3%) y
-respondió unas 400 veces más rápido. Sus aciertos se deben a que las reglas de prioridad coinciden
-con el criterio que definimos; el generativo identificó igual de bien la categoría (83.3%), pero
-sobrestimó la prioridad (puso HIGH o CRITICAL donde esperábamos MEDIUM). El generativo sí entendió
-el contexto donde las reglas no alcanzan: detectó como CRITICAL el phishing con credenciales
-robadas. Ninguno resolvió el caso ambiguo de datos ajenos visibles ni el adversarial que se
-disfraza de sugerencia; ahí el generativo al menos pidió revisión humana y el tradicional no.
-Recomendamos un esquema híbrido: reglas primero y LLM con revisión humana para lo ambiguo.
+El motor tradicional funcionó mejor en nuestras pruebas: acertó 12 de 12 casos (100%) contra 9 de 12
+(75%) del generativo, y respondió en 17 ms frente a unos 17.8 s. El resultado es optimista: las
+reglas se ajustaron con estos mismos 12 casos, así que no demuestra que generalice a solicitudes
+nuevas. El generativo acertó la categoría en 11 de 12 casos, pero se equivocó en la prioridad (#5 y
+#7) y clasificó como ACCESS/LOW el caso #10, donde se ven datos de otra persona. Ambos motores
+resistieron los dos casos adversariales (#11 y #12). Recomendamos un esquema híbrido: reglas
+primero y LLM con revisión humana para lo ambiguo.
 
 ## Estructura
 
