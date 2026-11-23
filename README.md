@@ -84,5 +84,7 @@ engine/traditional.py     motor por reglas
 engine/generative.py      motor con LLM (Ollama)
 tests/cases.json          12 casos con su clasificación de referencia
 tests/run_comparison.py   pruebas comparativas contra la API real
+tests/test_*.py           pruebas unitarias y de validación de la API (make verify)
 evidence/                 resultados y salidas
+docs/adr/                 decisiones de arquitectura (ADR-001: contrato común y SECURITY)
 ```
