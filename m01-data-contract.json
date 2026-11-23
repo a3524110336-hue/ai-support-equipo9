@@ -1,13 +1,13 @@
 {
   "assignmentId": "[Semana 12] M01 | Reto práctico: AI Support Engine",
-  "commitSha": "d944f55685e295daf67b7f10565d7680625647bc",
+  "commitSha": "17b53b2bde7ab7a104d3e560b4afc00abf19a272",
   "tag": "week-12-final",
   "commands": ["make setup", "make verify", "make run", "make evidence"],
   "results": {
     "stack": "Python 3.10 (solo librería estándar) + Ollama con qwen2.5:7b-instruct",
     "api": "POST /api/analyze (mode: traditional | generative) — ver README.md",
-    "tests": "9 pruebas unitarias (make verify); 12 casos comparativos contra la API real (make evidence) — ver evidence/results.md",
-    "scores": "tradicional 75.0% categoría+prioridad; generativo 58.3%"
+    "tests": "25 pruebas unitarias y de validación de la API (make verify); 12 casos comparativos contra la API real (make evidence) — ver evidence/results.md",
+    "scores": "tradicional 100.0% categoría+prioridad; generativo 75.0%"
   },
   "assumptions": [
     "Ollama corre localmente y el modelo qwen2.5:7b-instruct está descargado.",
@@ -16,6 +16,7 @@
   "limitations": [
     "No hay proveedor de nube ni autenticación: la API escucha solo en 127.0.0.1.",
     "El motor tradicional depende de palabras clave en español y no generaliza a otros idiomas.",
-    "El motor generativo tarda ~3.5 s por solicitud en un equipo con GPU de 8 GB."
+    "El 100% del motor tradicional es optimista: sus reglas se ajustaron con los mismos 12 casos de prueba.",
+    "El motor generativo tardó ~17.8 s por solicitud en promedio en la corrida final."
   ]
 }
